@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acesso ao Material</title>
+  <style>
+    body {
+      background-color: #fdf9f4;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 60px;
+      color: #333;
+    }
+    .btn-download {
+      display: inline-block;
+      background-color: #2D4B69;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      margin: 10px;
+    }
+    footer {
+      margin-top: 50px;
+      color: #888;
+      font-size: 14px;
+    }
+  </style>
+  <script>
+    var senha = prompt("Digite a senha para acessar os materiais:");
+    if (senha !== "controle2024") {
+      alert("Senha incorreta! Acesso negado.");
+      window.location.href = "index.html";
+    }
+  </script>
+</head>
+<body>
+  <h1>Parabéns pela sua compra! 🎉</h1>
+  <p>Você pode baixar seus materiais abaixo:</p>
+
+  <a href="ebook.pdf" class="btn-download" download>📘 Baixar E-book</a>
+  <a href="planilha-gestao.xlsx" class="btn-download" download>📊 Planilha de Gestão Financeira</a>
+  <a href="planilha-investimentos.xlsx" class="btn-download" download>💰 Planilha de Investimentos</a>
+
+  <footer>Este conteúdo é protegido por senha. Em caso de dúvidas, entre em contato pelo e-mail suportevocenocontrole@gmail.com</footer>
+</body>
+</html>
